@@ -1,0 +1,7 @@
+let num = 1992;
+let one = num%100;
+let two = (num-one)/100;
+let four = (two-(two%10))/10;
+let six = (one-(one%10))/10;
+let sum = (two%10)+four+(one%10)+six;
+alert(sum%10+((sum-(sum%10))/10));
